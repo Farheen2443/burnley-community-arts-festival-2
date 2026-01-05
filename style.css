@@ -1,0 +1,801 @@
+
+/* Global font */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Headings – bold & confident */
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+
+/* ============================= */
+/* Navigation (SAFE VERSION) */
+/* ============================= */
+
+/* Header wrapper */
+.top-nav {
+  width: 100%;
+  overflow: visible;
+}
+
+/* Apply box-sizing ONLY to nav elements */
+.top-nav *,
+.nav * {
+  box-sizing: border-box;
+}
+
+/* Nav bar */
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 4%;
+  background: #f8f8f8;
+  width: 100%;
+}
+
+/* Button groups */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left { justify-self: start; }
+.nav-right { justify-self: end; }
+
+/* Logo */
+.logo-link {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* Buttons */
+.nav-btn {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nav {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+  }
+
+  .nav-left,
+  .nav-right {
+    justify-content: center;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+}
+
+
+/* Image used*/
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* About section */
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Home Page Sections */
+.home-intro,
+.home-overview,
+.home-details,
+.home-cta,
+.home-values {
+    max-width: 1000px;
+    margin: 20px auto;       /* reduced vertical spacing */
+    padding: 40px 30px;      /* balanced inner spacing */
+    text-align: center;
+    color: #333;
+}
+
+
+/* Intro */
+.home-intro h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+/* Overview cards */
+.overview-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.overview-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.overview-card h3 {
+    margin-bottom: 10px;
+}
+
+.overview-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Details */
+.home-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* CTA */
+.cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    background: #f2f2f2;
+    color: #000;
+}
+
+/* Values */
+.home-values {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+
+/* Section separation */
+/* Alternate background colours */
+.home-overview {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+}
+
+.home-details {
+    background: #f5f5f5;
+}
+
+.home-cta {
+    background: linear-gradient(135deg, #1f3d3a, #2f5f5a);
+    color: white;
+    border-radius: 16px;
+}
+
+.home-cta h2,
+.home-cta p {
+    color: white;
+}
+
+
+
+
+.overview-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-6px);
+}
+
+
+
+
+
+
+
+
+.home-intro h1,
+.home-overview h2,
+.home-details h2,
+.home-values h2 {
+    letter-spacing: 0.5px;
+}
+
+.home-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact page */
+
+/* Contact page layout container */
+
+.contact-layout {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Central Contact Box */
+.contact-box {
+    width: 450px;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    z-index: 10;
+    position: relative;
+}
+.contact-box iframe {
+    border: none;
+    width: 100%;
+}
+
+
+/* Side images around the box */
+.side-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Positioning the images */
+.top-left {
+    top: 50px;
+    left: 12%;
+}
+
+.top-right {
+    top: 50px;
+    right: 12%;
+}
+
+.bottom-left {
+    bottom: 50px;
+    left: 12%;
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 12%;
+}
+
+
+/* CONTACT PAGE — larger side images */
+
+.contact-layout {
+    position: relative;
+    min-height: 1200px;   /* or whatever height fits the design */
+}
+
+.contact-layout .side-img {
+    width: 320px;    
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Adjust the positions if needed */
+.contact-layout .top-left {
+    top: 90px;
+    left: 80px;
+}
+
+.contact-layout .top-right {
+    top: 90px;
+    right: 80px;
+}
+
+.contact-layout .bottom-left {
+    bottom: 90px;
+    left: 80px;
+}
+
+.contact-layout .bottom-right {
+    bottom: 90px;
+    right: 80px;
+}
+
+@media (max-width: 900px) {
+    .contact-layout .side-img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-layout .side-img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+
+/* Exhibition page layout container */
+
+.exhibition-layout {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Exhibition Information Box */
+.exhibition-box {
+    width: 450px;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    z-index: 10;
+    position: relative;
+}
+
+/* Side images around the box */
+.side-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Positioning the images */
+.top-left {
+    top: 50px;
+    left: 12%;
+}
+
+.top-right {
+    top: 50px;
+    right: 12%;
+}
+
+.bottom-left {
+    bottom: 50px;
+    left: 12%;
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 12%;
+}
+
+
+
+/* Exhibition PAGE — larger side images */
+
+.exhibition-layout {
+    position: relative;
+    min-height: 1200px;   /* or whatever height fits the design */
+}
+
+.exhibition-layout .side-img {
+    width: 260px;    
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Adjust the positions if needed */
+.exhibition-layout .top-left {
+    top: 90px;
+    left: 80px;
+}
+
+.exhibition-layout .top-right {
+    top: 90px;
+    right: 80px;
+}
+
+.exhibition-layout .bottom-left {
+    bottom: 90px;
+    left: 80px;
+}
+
+.exhibition-layout .bottom-right {
+    bottom: 90px;
+    right: 80px;
+}
+
+
+/* Exhibition Section */
+.exhibition {
+    padding: 60px 5%;
+    text-align: center;
+    color: black;
+}
+
+.exhibition-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Grid Layout */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Artist Card */
+.artist-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Artist Profile Photo */
+.artist-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255,255,255,0.4);
+}
+
+/* Artwork Image */
+.artist-art {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Text */
+.artist-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.artist-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Event Page*/
+
+/* Events Section */
+.events {
+    padding: 60px 5%;
+    color: black;
+    text-align: center;
+}
+
+.events-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Events Layout */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+}
+
+/* Event Card */
+.event-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Event Image */
+.event-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Event Info */
+.event-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.event-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Event Details */
+.event-details {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.event-details p {
+    margin-bottom: 6px;
+}
+
+/* Book Now Button */
+.book-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Booking Page */
+.booking {
+    padding: 60px 5%;
+    color: black;
+    text-align: center;
+}
+
+.booking-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.booking-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Booking Form */
+.booking-form {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+.booking-form label {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Inputs */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Catering page */
+
+/* Catering Section */
+.catering {
+    padding: 60px 5%;
+    color: black;
+    text-align: center;
+}
+
+.catering-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Catering Layout */
+.catering-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+}
+
+/* Catering Card */
+.catering-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catering-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Catering Image */
+.catering-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Catering Info */
+.catering-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.catering-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Menu List */
+.catering-info ul {
+    padding-left: 20px;
+}
+
+.catering-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Allergy notice */
+.allergy-notice {
+    margin: 50px auto 0;
+    padding: 20px;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-left: 6px solid #1b9599; /* warm accent colour */
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.allergy-notice h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.allergy-notice p {
+    line-height: 1.6;
+    color: #444;
+}
+
